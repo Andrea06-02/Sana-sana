@@ -217,7 +217,6 @@ public class RegistroVista extends javax.swing.JFrame {
 
     private void txt_ConfirmarContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_ConfirmarContraseñaActionPerformed
         
-        
     }//GEN-LAST:event_txt_ConfirmarContraseñaActionPerformed
 
     private void btn_RegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RegistrarActionPerformed
