@@ -5,6 +5,7 @@ import Modelo.MSesion;
 import javax.swing.JOptionPane;
 import java.sql.Connection;
 import Funciones.Cliente;
+
 public class LoginVista extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginVista.class.getName());
@@ -57,9 +58,10 @@ public class LoginVista extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, 60));
 
         lbRegistrase.setBackground(new java.awt.Color(255, 255, 255));
-        lbRegistrase.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        lbRegistrase.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
         lbRegistrase.setForeground(new java.awt.Color(255, 255, 255));
-        lbRegistrase.setText("registrase");
+        lbRegistrase.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbRegistrase.setText("Registrase");
         lbRegistrase.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbRegistraseMouseClicked(evt);
@@ -80,7 +82,7 @@ public class LoginVista extends javax.swing.JFrame {
         btn_Ingresar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_Ingresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_Ingresar.addActionListener(this::btn_IngresarActionPerformed);
-        jPanel1.add(btn_Ingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 210, -1));
+        jPanel1.add(btn_Ingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, 140, -1));
 
         txt_Contraseña.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_Contraseña.setName("txtContraseña"); // NOI18N
@@ -88,6 +90,7 @@ public class LoginVista extends javax.swing.JFrame {
 
         txt_Usuario.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_Usuario.setName("txtUsuario"); // NOI18N
+        txt_Usuario.addActionListener(this::txt_UsuarioActionPerformed);
         txt_Usuario.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txt_UsuarioKeyReleased(evt);
@@ -245,6 +248,11 @@ public class LoginVista extends javax.swing.JFrame {
         RV.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_lbRegistraseMouseClicked
+
+    private void txt_UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_UsuarioActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_txt_UsuarioActionPerformed
 
   
     public static void main(String args[]) {
