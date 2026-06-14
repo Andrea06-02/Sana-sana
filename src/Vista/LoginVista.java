@@ -21,6 +21,7 @@ public class LoginVista extends javax.swing.JFrame {
         lbContraseñaVacia.setVisible(false);
         lbErrorUsuario.setVisible(false);
         lbErrorContraseña.setVisible(false);
+        
      
              }
     @SuppressWarnings("unchecked")
